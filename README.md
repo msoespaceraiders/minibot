@@ -4,7 +4,7 @@
 
 Clone the repository, then open it with the Arduino IDE. Write the intended commands in `Code.h` then deploy to the bot.
 
-Remember, it's necessary to configure the Arduino IDE to use the old bootloader.
+Remember, it's necessary to configure the Arduino IDE to use the ATMEGA328P board.
 
 ## List of Commands
 
