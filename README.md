@@ -4,7 +4,7 @@
 
 You will need the Arduino IDE to upload the program. It's available for [Windows](https://apps.microsoft.com/detail/xpddtbj80f8pc9?hl=en-US&gl=US), [Mac](https://www.arduino.cc/en/software/), and [Linux](https://flathub.org/apps/cc.arduino.IDE2/flatpakhttps).
 
-Download the repository by clicking the green "<> Code" button at the top of the page and selecting Download ZIP, then extracting the ZIP file. Then open `Minibot.ino` with the Arduino IDE.
+Download the repository by clicking the green "<> Code" button at the top of the page and selecting Download ZIP, then extracting the ZIP file. Then open `Minibot.ino` with the Arduino IDE. MAKE SURE THAT THE FOLDER Minibot.ino IS IN HAS THE SAME NAME 'Minibot'.
 
 It's necessary to configure the Arduino IDE to use the ATMEGA328P board. Click on the Board Manager tab, search for ATMEGA328P, and install the package.
 

@@ -12,7 +12,7 @@
 #define MOTOR2A_PHASE_PIN 3
 #define MOTOR2_MODE_PIN 2
 
-#define DEFAULT_SPEED 220
+#define DEFAULT_SPEED 110
 #define DEFAULT_SPEED_SLOW 210
 
 int motor1BSpeed = 0;
@@ -82,6 +82,10 @@ void Stop(void){
   analogWrite(MOTOR2A_PWM_PIN, 0);*/
 }
 
+void stop(void){
+  Stop();
+}
+
 void Forward(float time){
   digitalWrite(MOTOR1B_PHASE_PIN, FORWARD);
   digitalWrite(MOTOR1A_PHASE_PIN, FORWARD);
@@ -94,6 +98,10 @@ void Forward(float time){
   analogWrite(MOTOR2A_PWM_PIN, DEFAULT_SPEED);*/
   DelaySeconds(time);
   Stop();
+}
+
+void forward(float time){
+  Forward(time);
 }
 
 void Backward(float time){
@@ -110,7 +118,9 @@ void Backward(float time){
   Stop();
 }
 
-
+void backward(float time){
+  Backward(time);
+}
 
 void Spin(bool dir, float time){
   digitalWrite(MOTOR1B_PHASE_PIN, dir);
@@ -124,6 +134,10 @@ void Spin(bool dir, float time){
   analogWrite(MOTOR2A_PWM_PIN, DEFAULT_SPEED);*/
   DelaySeconds(time);
   Stop();
+}
+
+void spin(bool dir, float time){
+  Spin(dir, time);
 }
 
 void InitializeRover(void){
